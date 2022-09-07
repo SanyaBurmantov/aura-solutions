@@ -243,6 +243,7 @@
   }
   .whiteColor {
     color: #fff;
+
   }
   /* BACKGROUNDS */
   .darkBg {
@@ -256,6 +257,7 @@
   }
   .lightBg {
     background-color: #F5F5F5;
+    padding: 50px 0;
   }
   .coralBg {
     background-color: #C4FFFF;

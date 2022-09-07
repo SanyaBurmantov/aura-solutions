@@ -15,7 +15,7 @@ import AddImage2 from "../../assets/img/add/add2.png";
 export default function Projects() {
   return (
     <Wrapper id="projects">
-      <div className="whiteBg">
+      {/* <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Projects</h1>
@@ -83,7 +83,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
@@ -95,18 +95,35 @@ export default function Projects() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h4 className="font15 semiBold">A few words about company</h4>
-              <h2 className="font40 extraBold">A Study of Creativity</h2>
+              {/* <h4 className="font15 semiBold">A few words about company</h4> */}
+              <h2 className="font40 extraBold">
+                When is outstaffing beneficial?
+              </h2>
               <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Unprofitable maintenance of IT-specialist in the state. Small
+                staff in general. The need for an IT employee with a guaranteed
+                high level of qualifications. Need to implement a specific IT
+                project or solve non-standard tasks that require highly
+                specialized staff. Replacement of a staff IT-employee during his
+                absence. The need for round-the-clock technical support for the
+                IT infrastructure.
               </p>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
+              <ButtonsRow
+                className="flexNullCenter"
+                style={{ margin: "30px 0" }}
+              >
                 <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
+                  <FullButton
+                    title="Get Started"
+                    action={() => alert("clicked")}
+                  />
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                  <FullButton
+                    title="Contact Us"
+                    action={() => alert("clicked")}
+                    border
+                  />
                 </div>
               </ButtonsRow>
             </AddRight>

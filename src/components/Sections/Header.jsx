@@ -14,8 +14,7 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">We are Digital Agency.</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          AURA is an IT outstaffing company that helps you quickly grow your team in one day, reduce operational costs and maximize results. A remote developer operates as a temporary member of your in-house team. The contract runs between the hiring company and the staffing or vendor firm that provides the employees.Bringing our professionals into your team will allow you to fill project expertise gaps and have the best people working for you for as long as you need, avoiding increasing your company's IT staff and not wasting time and resources on the hiring process.
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Get Started" />
@@ -25,7 +24,7 @@ export default function Header() {
       <RightSide>
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
-          <QuoteWrapper className="flexCenter darkBg radius8">
+          {/* <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
@@ -34,8 +33,8 @@ export default function Header() {
                 <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
               </p>
               <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
-            </div>
-          </QuoteWrapper>
+            </div> 
+          </QuoteWrapper> */}
           <DotsWrapper>
             <Dots />
           </DotsWrapper>

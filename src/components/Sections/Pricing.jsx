@@ -6,14 +6,15 @@ import PricingTable from "../Elements/PricingTable";
 export default function Pricing() {
   return (
     <Wrapper id="pricing">
-      <div className="whiteBg">
+      <div className="lightBg">
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Check Our Pricing</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            Lower hourly rates in comparison to outsourcing.
+In-house hourly rates are typically lower, and you get rid of the project management hours that your vendor usually adds to the estimate, as well as the cost of equipment and other facilities.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              {/* labore et dolore magna aliquyam erat, sed diam voluptua. */}
             </p>
           </HeaderInfo>
           <TablesWrapper className="flexSpaceNull">
