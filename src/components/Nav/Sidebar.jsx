@@ -41,12 +41,12 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="services"
+            to="beneficial"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Services
+            Beneficial
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -55,15 +55,15 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="projects"
+            to="advantages"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Projects
+            Advantages
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -90,8 +90,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             Pricing
           </Link>
-        </li>
-        <li className="semiBold font15 pointer">
+        </li> */}
+        {/* <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -104,7 +104,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
         {/* <li className="semiBold font15 pointer">
@@ -113,7 +113,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           </a>
         </li> */}
         <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
+
+          <a href="mailto: aura.solutions.tech@gmail.com" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
             Get Started
           </a>
         </li>
