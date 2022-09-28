@@ -1,10 +1,10 @@
 import React from "react";
 // Sections
 import TopNavbar from "../components/Nav/TopNavbar";
-import Header from "../components/Sections/Header";
+import HomeSection from "../components/Sections/HomeSection";
 import Services from "../components/Sections/Services";
-import Projects from "../components/Sections/Projects";
-import Blog from "../components/Sections/Blog";
+import BeneficialSection from "../components/Sections/BeneficialSection";
+import AdvantagesSection from "../components/Sections/AdvantagesSection";
 import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
@@ -13,10 +13,10 @@ export default function Landing() {
   return (
     <>
       <TopNavbar />
-      <Header />
+      <HomeSection />
       {/* <Services /> */}
-      <Projects />
-      <Blog />
+      <BeneficialSection />
+      <AdvantagesSection />
       {/* <Pricing /> */}
       {/* <Contact /> */}
       <Footer />

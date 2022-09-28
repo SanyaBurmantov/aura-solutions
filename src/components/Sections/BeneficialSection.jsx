@@ -12,9 +12,9 @@ import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/add/add2.png";
 
-export default function Projects() {
+export default function AdvantagesSection() {
   return (
-    <Wrapper id="projects">
+    <Wrapper id="beneficial">
       {/* <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
@@ -113,17 +113,9 @@ export default function Projects() {
                 style={{ margin: "30px 0" }}
               >
                 <div style={{ width: "190px" }}>
-                  <FullButton
-                    title="Get Started"
-                    action={() => alert("clicked")}
-                  />
-                </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton
-                    title="Contact Us"
-                    action={() => alert("clicked")}
-                    border
-                  />
+                  <a href="mailto: aura.solutions.tech@gmail.com">
+                    <FullButton title="Contact Us" border />
+                  </a>
                 </div>
               </ButtonsRow>
             </AddRight>

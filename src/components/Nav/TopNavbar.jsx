@@ -19,31 +19,50 @@ export default function TopNavbar() {
     };
   }, [y]);
 
-
   return (
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
+      <Wrapper
+        className="flexCenter animate whiteBg"
+        style={y > 100 ? { height: "60px" } : { height: "80px" }}
+      >
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              AURA
+              Aura Solutions
             </h1>
           </Link>
-          <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
+          <BurderWrapper
+            className="pointer"
+            onClick={() => toggleSidebar(!sidebarOpen)}
+          >
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Home
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
-                Services
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="beneficial"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Beneficial
               </Link>
             </li>
             {/* <li className="semiBold font15 pointer">
@@ -57,15 +76,29 @@ export default function TopNavbar() {
               </Link>
             </li> */}
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
-                Pricing
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="advantages"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
+                Advantages
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
+            {/* <li className="semiBold font15 pointer">
+              <Link
+                activeClass="active"
+                style={{ padding: "10px 15px" }}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
+              >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             {/* <li className="semiBold font15 pointer">
@@ -74,7 +107,11 @@ export default function TopNavbar() {
               </a>
             </li> */}
             <li className="semiBold font15 pointer flexCenter">
-              <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
+              <a
+                href="mailto: aura.solutions.tech@gmail.com"
+                className="radius8 lightBg"
+                style={{ padding: "10px 15px" }}
+              >
                 Get Started
               </a>
             </li>
@@ -95,7 +132,7 @@ const Wrapper = styled.nav`
 const NavInner = styled.div`
   position: relative;
   height: 100%;
-`
+`;
 const BurderWrapper = styled.button`
   outline: none;
   border: 0px;
@@ -118,5 +155,3 @@ const UlWrapperRight = styled.ul`
     display: none;
   }
 `;
-
-

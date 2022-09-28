@@ -8,7 +8,7 @@ import AddImage2 from "../../assets/img/who.png";
 
 export default function Blog() {
   return (
-    <Wrapper id="blog">
+    <Wrapper id="advantages">
       <div className="whiteBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">

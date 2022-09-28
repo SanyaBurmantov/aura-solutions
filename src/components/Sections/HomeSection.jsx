@@ -14,16 +14,34 @@ export default function Header() {
         <div>
           <h1 className="extraBold font60">We are Digital Agency.</h1>
           <HeaderP className="font13 semiBold">
-          AURA is an IT outstaffing company that helps you quickly grow your team in one day, reduce operational costs and maximize results. A remote developer operates as a temporary member of your in-house team. The contract runs between the hiring company and the staffing or vendor firm that provides the employees.Bringing our professionals into your team will allow you to fill project expertise gaps and have the best people working for you for as long as you need, avoiding increasing your company's IT staff and not wasting time and resources on the hiring process.
+            AURA is an IT outstaffing company that helps you quickly grow your
+            team in one day, reduce operational costs and maximize results. A
+            remote developer operates as a temporary member of your in-house
+            team. The contract runs between the hiring company and the staffing
+            or vendor firm that provides the employees.Bringing our
+            professionals into your team will allow you to fill project
+            expertise gaps and have the best people working for you for as long
+            as you need, avoiding increasing your company's IT staff and not
+            wasting time and resources on the hiring process.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <a
+              href="mailto: aura.solutions.tech@gmail.com"
+              className="whiteColor font13"
+            >
+              <FullButton title="Get Started" />
+            </a>
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+          <Img
+            className="radius8"
+            src={HeaderImage}
+            alt="office"
+            style={{ zIndex: 9 }}
+          />
           {/* <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
@@ -44,7 +62,6 @@ export default function Header() {
     </Wrapper>
   );
 }
-
 
 const Wrapper = styled.section`
   padding-top: 80px;
@@ -150,5 +167,3 @@ const DotsWrapper = styled.div`
     display: none;
   }
 `;
-
-
