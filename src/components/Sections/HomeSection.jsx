@@ -6,6 +6,7 @@ import FullButton from "../Buttons/FullButton";
 import HeaderImage from "../../assets/img/header-img.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -19,12 +20,14 @@ export default function Header() {
 
           </HeaderP>
           <BtnWrapper>
-            <a
-              href="mailto: aura.solutions.tech@gmail.com"
-              className="whiteColor font13"
+            <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
             >
               <FullButton title="Get Started" />
-            </a>
+            </Link>
           </BtnWrapper>
         </div>
       </LeftSide>

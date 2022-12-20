@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
-            <p className="font13">
+            <p className="sc-dQoVA iaQuxq font13 semiBold">
               We'd love to build something amazing together
               {/* <br />
               labore et dolore magna aliquyam erat, sed diam voluptua. */}

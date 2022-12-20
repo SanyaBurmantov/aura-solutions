@@ -33,7 +33,7 @@ export default function Contact() {
             </Link>
             <StyleP className="whiteColor font13">
               <a
-                href="mailto: aura.solutions.tech@gmail.com"
+                href="mailto: hi@aura-solutions.tech"
                 className="whiteColor font13"
               >
                 hi@aura-solutions.tech

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Buttons/FullButton";
 import TestimonialSlider from "../Elements/TestimonialSlider";
-import AddImage2 from "../../assets/img/who.png";
+import AddImage2 from "../../assets/img/baha.jpg";
 
 export default function Blog() {
     return (
@@ -17,7 +17,7 @@ export default function Blog() {
                                 Our story
                             </h1>
 
-                            <p className="font13">
+                            <p className="sc-dQoVA iaQuxq font13 semiBold">
                                 Our story began in 2015 when our Founder Bahtiyar decided he wanted to apply his
                                 precious experience in software development and share his ideas with the tech world. His
                                 inside view on software development gave him a lot of understanding about software

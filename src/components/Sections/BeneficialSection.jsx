@@ -11,6 +11,7 @@ import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/add/add2.png";
+import { Link } from "react-scroll";
 
 export default function AdvantagesSection() {
   return (
@@ -108,14 +109,14 @@ export default function AdvantagesSection() {
               {/*  absence. The need for round-the-clock technical support for the*/}
               {/*  IT infrastructure.*/}
               {/*</p>*/}
-              <p className="font12">
+              <p className="sc-dQoVA iaQuxq font13 semiBold">
                 In our opinion, to work together we should match in ideals and priorities. Other parts will come through consideration and fusion. We believe creativity, value-spent time, high quality and new approaches are leading us through the way. We bet on a sustainable future and smart development.
-
-                • 50+ active remote IT engineers in the talent pool
-                • First candidate within 24 hours
-                • Fast resource delivery time
-                • No minimum or maximum time commitment
-
+              <ul>
+                <li> • 50+ active remote IT engineers in the talent pool</li>
+                <li> • First candidate within 24 hours</li>
+                <li> • Fast resource delivery time</li>
+                <li> • No minimum or maximum time commitment</li>
+              </ul>
                 Doubting if to start? Let’s schedule a free consultation call
                 Name
                 E-mail
@@ -125,9 +126,14 @@ export default function AdvantagesSection() {
                 style={{ margin: "30px 0" }}
               >
                 <div style={{ width: "190px" }}>
-                  <a href="mailto: aura.solutions.tech@gmail.com">
+                  <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                  >
                     <FullButton title="Contact Us" border />
-                  </a>
+                  </Link>
                 </div>
               </ButtonsRow>
             </AddRight>

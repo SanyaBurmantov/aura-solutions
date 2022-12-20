@@ -6,7 +6,7 @@ export const useValidation = (value, validations) => {
     const [minLengthError, setMinLengthError] = useState(false)
     const [isPhone, setPhone] = useState(false)
     const [nameError, setNameError] = useState(false)
-    const [PhoneError, setPhoneError] = useState(false)
+    const [PostError, setPostError] = useState(false)
     const [inputValid, setInputValid] = useState(false)
 
 
@@ -19,28 +19,25 @@ export const useValidation = (value, validations) => {
                 case 'isEmpty':
                     value ? setEmpty(false) : setEmpty(true)
                     break;
-                case 'Phone':
-                    value.length != validations[validation] ? setPhone(true) : setPhone(false)
-                    break;
                 case 'testName':
                     const reg = /[^a-zа-яё\s]/gi;
                     reg.test(String(value).toLowerCase()) ? setNameError(true) : setNameError(false)
                     break;
-                case 'testPhone':
-                    const reg2 = /[^0-9]/g;
-                    reg2.test(String(value).toLowerCase()) ? setPhoneError(true) : setPhoneError(false)
+                case 'testPost':
+                    const reg1 = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+                    reg1.test(String(value).toLowerCase()) ? setPostError(true) : setPostError(false)
                     break;
             }
         }
     }, [value])
 
     useEffect(() => {
-        if (isEmpty || minLengthError || isPhone || nameError || PhoneError) {
+        if (isEmpty || minLengthError || isPhone || nameError || PostError) {
             setInputValid(false)
         } else {
             setInputValid(true)
         }
-    }, [isEmpty, minLengthError, isPhone, nameError, PhoneError])
+    }, [isEmpty, minLengthError, isPhone, nameError, PostError])
 
     return {
         isEmpty,
@@ -48,7 +45,7 @@ export const useValidation = (value, validations) => {
         isPhone,
         inputValid,
         nameError,
-        PhoneError
+        PostError
     }
 }
 

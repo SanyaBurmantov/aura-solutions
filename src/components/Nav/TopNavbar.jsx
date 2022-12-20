@@ -107,13 +107,16 @@ export default function TopNavbar() {
               </a>
             </li> */}
             <li className="semiBold font15 pointer flexCenter">
-              <a
-                href="mailto: aura.solutions.tech@gmail.com"
-                className="radius8 lightBg"
-                style={{ padding: "10px 15px" }}
+              <Link
+                  className="radius8 lightBg"
+                  style={{ padding: "10px 15px" }}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
               >
                 Get Started
-              </a>
+              </Link>
             </li>
           </UlWrapperRight>
         </NavInner>
