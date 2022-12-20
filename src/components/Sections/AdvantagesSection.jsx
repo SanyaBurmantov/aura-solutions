@@ -28,7 +28,9 @@ export default function Blog() {
 
                                 Reach out to our Founder and CEO
 
-                            </p>
+                            </p> <p className="sc-dQoVA iaQuxq font13 semiBold">
+                             <a href='https://www.linkedin.com/in/jack-letter-one/'>Bahtiyar Tashov | LinkedIn</a>
+                        </p>
                         </AddLeft>
                         <AddRight>
                             {/* <AddRightInner> */}

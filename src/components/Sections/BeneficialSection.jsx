@@ -117,10 +117,7 @@ export default function AdvantagesSection() {
                 <li> • Fast resource delivery time</li>
                 <li> • No minimum or maximum time commitment</li>
               </ul>
-                Doubting if to start? Let’s schedule a free consultation call
-                Name
-                E-mail
-              </p>
+                             </p>
               <ButtonsRow
                 className="flexNullCenter"
                 style={{ margin: "30px 0" }}

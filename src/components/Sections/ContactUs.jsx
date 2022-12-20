@@ -47,7 +47,7 @@ export const ContactUs = () => {
 
     const [sendData, setSendData] = useState(false);
     const nameInputHooks = useInput('', {isEmpty: true, testName: true, minLength: 3})
-    const postInputHooks = useInput('', {isEmpty: true, testPost: true, minLength: 5})
+    const postInputHooks = useInput('', {isEmpty: true,  minLength: 5})
     const commentInputHooks = useInput('')
 
     let [name, setName] = useState('')
@@ -116,7 +116,7 @@ export const ContactUs = () => {
                         <FlexContainer className="container">
                         <div className="lgXLZF">
                             <h1 className="font40 extraBold">Contact Us</h1>
-                            <p className="font13 semiBold">Fill out the form and we will contact with you in the near future.</p>
+                            <p className="font13 semiBold"> Doubting if to start? Let’s schedule a free consultation call.</p>
                             <p className="font13 semiBold">You can also email us hi@aura-solutions.tech</p>
                         </div>
                         <form onSubmit={doForm} style={styleForm} className='radius8'>
@@ -135,10 +135,6 @@ export const ContactUs = () => {
                                    onBlur={e => nameInputHooks.onBlur(e)}
                                    onChange={onChangeName}
                             />
-                            {(postInputHooks.isDirty && postInputHooks.isEmpty) &&
-                                <div style={{color: 'red'}}>Поле не может быть пустым</div>}
-                            {(postInputHooks.isDirty && postInputHooks.minLengthError) &&
-                                <div style={{color: 'red'}}>Поле должно содержать более 2 символов</div>}
 
                             <input className="radius8" style={input}
                                    type='text'
