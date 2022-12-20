@@ -8,10 +8,13 @@ import AdvantagesSection from "../components/Sections/AdvantagesSection";
 import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
+import Modal from "../shared/modal";
+import OurStory from "../components/Sections/OurStory";
 
 export default function Landing() {
   return (
     <>
+
       <TopNavbar />
       <HomeSection />
       {/* <Services /> */}
@@ -19,7 +22,10 @@ export default function Landing() {
       <AdvantagesSection />
       {/* <Pricing /> */}
       {/* <Contact /> */}
+        <Modal />
+
       <Footer />
+
     </>
   );
 }

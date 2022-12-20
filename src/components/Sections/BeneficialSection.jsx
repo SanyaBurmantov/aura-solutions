@@ -97,16 +97,28 @@ export default function AdvantagesSection() {
             <AddRight>
               {/* <h4 className="font15 semiBold">A few words about company</h4> */}
               <h2 className="font40 extraBold">
-                When is outstaffing beneficial?
+                Work with us
               </h2>
+              {/*<p className="font12">*/}
+              {/*  Unprofitable maintenance of IT-specialist in the state. Small*/}
+              {/*  staff in general. The need for an IT employee with a guaranteed*/}
+              {/*  high level of qualifications. Need to implement a specific IT*/}
+              {/*  project or solve non-standard tasks that require highly*/}
+              {/*  specialized staff. Replacement of a staff IT-employee during his*/}
+              {/*  absence. The need for round-the-clock technical support for the*/}
+              {/*  IT infrastructure.*/}
+              {/*</p>*/}
               <p className="font12">
-                Unprofitable maintenance of IT-specialist in the state. Small
-                staff in general. The need for an IT employee with a guaranteed
-                high level of qualifications. Need to implement a specific IT
-                project or solve non-standard tasks that require highly
-                specialized staff. Replacement of a staff IT-employee during his
-                absence. The need for round-the-clock technical support for the
-                IT infrastructure.
+                In our opinion, to work together we should match in ideals and priorities. Other parts will come through consideration and fusion. We believe creativity, value-spent time, high quality and new approaches are leading us through the way. We bet on a sustainable future and smart development.
+
+                • 50+ active remote IT engineers in the talent pool
+                • First candidate within 24 hours
+                • Fast resource delivery time
+                • No minimum or maximum time commitment
+
+                Doubting if to start? Let’s schedule a free consultation call
+                Name
+                E-mail
               </p>
               <ButtonsRow
                 className="flexNullCenter"

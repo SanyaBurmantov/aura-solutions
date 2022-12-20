@@ -62,7 +62,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Beneficial
+                Work with us
               </Link>
             </li>
             {/* <li className="semiBold font15 pointer">
@@ -84,7 +84,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Advantages
+                Our Story
               </Link>
             </li>
             {/* <li className="semiBold font15 pointer">

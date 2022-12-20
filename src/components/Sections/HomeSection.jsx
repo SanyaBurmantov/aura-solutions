@@ -12,17 +12,11 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1 className="extraBold font60">AURA is an IT outsourcing agency with a digital soul. </h1>
           <HeaderP className="font13 semiBold">
-            AURA is an IT outstaffing company that helps you quickly grow your
-            team in one day, reduce operational costs and maximize results. A
-            remote developer operates as a temporary member of your in-house
-            team. The contract runs between the hiring company and the staffing
-            or vendor firm that provides the employees.Bringing our
-            professionals into your team will allow you to fill project
-            expertise gaps and have the best people working for you for as long
-            as you need, avoiding increasing your company's IT staff and not
-            wasting time and resources on the hiring process.
+            Aura Solutions Tech is your pathfinder to a more digitalized and efficient business. Everyone knows digitalization is not only a must for keeping up with the modern market but a way to do less work and earn more money.
+            We prototype, we develop, we test, and we support.
+
           </HeaderP>
           <BtnWrapper>
             <a

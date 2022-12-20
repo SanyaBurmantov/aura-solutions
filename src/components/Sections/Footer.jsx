@@ -36,7 +36,7 @@ export default function Contact() {
                 href="mailto: aura.solutions.tech@gmail.com"
                 className="whiteColor font13"
               >
-                aura.solutions.tech@gmail.com
+                hi@aura-solutions.tech
               </a>
             </StyleP>
 
